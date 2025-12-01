@@ -3,8 +3,8 @@
 
 local M = {}
 
--- Path to the data-lint binary (adjust as needed)
-M.binary_path = vim.fn.expand("~") .. "/Documents/data-lint-example/target/release/data-lint"
+-- Path to the data-lint binary (expects it in PATH, can be overridden in setup)
+M.binary_path = "data-lint"
 
 -- Namespace for diagnostics
 local ns = vim.api.nvim_create_namespace("data_lint")
